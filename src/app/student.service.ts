@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   
 export class StudentService {  
   
-  private baseUrl = 'http://localhost:8080/api/';  
+  private baseUrl = 'studentplatformback-production.up.railway.app1/api/';  
   
   constructor(private http:HttpClient) { }  
   
