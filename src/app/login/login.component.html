@@ -1,0 +1,17 @@
+<h2>Login</h2>
+
+<form (ngSubmit)="login()">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" required [value]="username" (keyup.enter)="username=$any($event.target).value">
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password"  required [value]="password" (keyup.enter)="password=$any($event.target).value">
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}></div>
+
+  <button type="submit" >Login</button>
+</form>
